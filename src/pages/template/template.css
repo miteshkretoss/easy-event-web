@@ -1,0 +1,212 @@
+.main-preview,
+.edit-template-main,
+.preview-template-main {
+    /* background-color: beige; */
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.categories .heading,
+.invitation .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.categories .heading span:first-child,
+.invitation .heading span:first-child {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+.categories .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categories .cards .child,
+.invitation .cards .child {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.categories .cards .card {
+    border: 1px solid #ACACAC;
+    margin: 10px;
+    min-height: 150px;
+    min-width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.categories .cards .card .dummy-img {
+    height: 50px;
+    width: 50px;
+}
+
+.invitation .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.invitation .cards .card {
+    border: 1px solid #ACACAC;
+    margin: 10px;
+    min-height: 710px;
+    max-width: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.invitation .cards .card img {
+    height: 50px;
+    width: 50px;
+}
+
+.invitation .cards .child .btnsdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    width: 70%;
+}
+
+.invitation .cards .child .btnsdiv .previewBtn,
+.invitation .cards .child .btnsdiv .useTemplateBtn {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.invitation .cards .child .btnsdiv .previewBtn {
+    background-color: black;
+    color: #fff;
+}
+
+.invitation .cards .child .btnsdiv .useTemplateBtn {
+    background-color: #FF9900;
+}
+
+.edit-template-main .steps {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-template-main .steps .stepCount {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 20px;
+    font-size: 48px;
+}
+
+.edit-template-main .steps .card {
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.edit-template-main .steps .inputes {
+    width: 50%;
+    text-align: end !important;
+    /* margin: 20px 0; */
+}
+
+.edit-template-main .steps .card img {
+    height: 400px;
+    width: 250px;
+}
+
+.preview-content .child .card {
+    border: 1px solid #ACACAC;
+    margin: 10px auto;
+    min-height: 150px;
+    max-width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.videoPreviewcard {
+    border: 1px solid #ACACAC;
+    margin: 10px auto;
+    min-height: 150px;
+    max-width: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 1440px) {
+    .invitation .cards .card {
+        min-height: 533px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 1068px) {
+    .invitation .cards .card {
+        max-width: 200px;
+        min-height: 350px;
+    }
+
+    .categories .cards .card {
+        min-width: 130px;
+    }
+}
+
+@media (max-width: 990px) {
+    .invitation .cards .card {
+        min-width: 130px;
+        min-height: 300px;
+    }
+
+    .categories .cards .card {
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 825px) {
+    .invitation .cards .card {
+        min-width: 200px;
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 668px) {
+    .categories .cards .card {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 584px) {
+    .child {
+        flex-basis: 50%;
+    }
+}

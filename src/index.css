@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: 'poppins';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.MuiFormLabel-root {
+  color: #000 !important;
+}
+
+.MuiInput-input {
+  color: #9F9F9F !important;
+}
+
+.css-v4u5dn-MuiInputBase-root-MuiInput-root {
+  border-bottom: 1px solid #616161 !important
+}
