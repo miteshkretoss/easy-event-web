@@ -2,9 +2,6 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import T11 from '../../assets/img/T11.png'
-import T12 from '../../assets/img/T12.png'
-import T13 from '../../assets/img/T13.png'
-import T14 from '../../assets/img/T14.png'
 import { Button, TextField } from '@mui/material';
 
 const EditTemplate = () => {
@@ -21,6 +18,7 @@ const EditTemplate = () => {
 
     useEffect(() => {
         getData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const onchange = (e, name) => {

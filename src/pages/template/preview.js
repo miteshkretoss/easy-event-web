@@ -17,6 +17,7 @@ const Preview = () => {
     console.log('data', location.state?.data)
     if (location?.state?.data && location?.state?.data?.length) setTemplateData(location?.state?.data)
     else navigate(-1, { state: { data: [] } })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location])
 
   const downloadVideo = () => {
@@ -40,6 +41,7 @@ const Preview = () => {
       }).catch(err => {
         console.log('err', err)
       })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [templateData])
 
   return (

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./template.css"
 import picture from "../../assets/img/picture.png"
 import axios from 'axios'
