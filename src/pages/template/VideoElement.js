@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 
 function VideoElement({ base64Video, videoclass, getBackURL }) {
     const [videoObjectURL, setVideoObjectURL] = useState(null);
-    const [played, setPlayed] = useState(false);
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -15,15 +14,8 @@ function VideoElement({ base64Video, videoclass, getBackURL }) {
         };
 
         convertBase64ToVideoObjectURL();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [base64Video]);
-
-    const handlePlay = () => {
-        if (videoRef.current && !played) {
-            videoRef.current.play().then(() => {
-                setPlayed(true);
-            });
-        }
-    };
 
     function b64toBlob(base64, contentType) {
         contentType = contentType || '';
