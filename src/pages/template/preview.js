@@ -33,7 +33,7 @@ const Preview = () => {
 
   useEffect(() => {
     if (templateData.length)
-      axios.post(`http://localhost:5000/templates/${template}`, templateData).then(res => {
+      axios.post(`http://192.168.1.180:5000/templates/${template}`, templateData).then(res => {
         setRenderedData(res.data)
         console.log('🚀🚀🚀 ~ file: preview.js:52 ~ axios.post ~ res.data:-', res.data);
         setloading(false)

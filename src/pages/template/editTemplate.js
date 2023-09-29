@@ -12,7 +12,7 @@ const EditTemplate = () => {
     let { template } = useParams();
     const navigate = useNavigate();
     const getData = () => {
-        axios.get(`http://localhost:5000/templates/${template}`).then(res => {
+        axios.get(`http://192.168.1.180:5000/templates/${template}`).then(res => {
             setFilds(res.data?.data)
         }).catch(err => {
             console.log('err', err)

@@ -14,7 +14,7 @@ const Index = () => {
     const [templates, setTemplates] = useState([])
 
     const getData = () => {
-        axios.get('http://localhost:5000/templates').then(res => {
+        axios.get('http://192.168.1.180:5000/templates').then(res => {
             setTemplates(res.data?.data)
         }).catch(err => {
             console.log('err', err)
